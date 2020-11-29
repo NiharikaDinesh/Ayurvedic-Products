@@ -1,0 +1,142 @@
+<html>
+    <head>
+        <title>Cart</title>
+
+        <link rel="icon" href="favicon.ico">
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+            <script src="https://kit.fontawesome.com/d7d7ee6600.js" crossorigin="anonymous"></script>
+            <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&family=Satisfy&family=Tajawal:wght@200&display=swap" rel="stylesheet">
+
+            <!-- bootstrap scripts -->
+              <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="css/styles.css">
+        <style type="text/css">
+        body{
+          background: linear-gradient(90deg, #ffffff 0%, #b6cec7 35%, #ffffff 100%);
+    background-size: cover;
+    border-style:groove ;
+    border-width: 10px;
+    border-color:green maroon;
+    margin: 0em;
+        }
+        #style{
+            position: relative;
+            font-size: larger;
+            top:10px;
+        }
+        .button {
+          border-radius: 2px;
+          background-color: green;
+          border: none;
+          color: #FFFFFF;
+          height: 80px;
+          text-align: center;
+          font-size: 28px;
+          padding: 20px;
+          width: 300px;
+          transition: all 0.5s;
+          cursor: pointer;
+          margin: 5px;
+        }
+
+
+
+        .button :after {
+          content: '\00bb';
+          position: absolute;
+          opacity: 0;
+          top: 0;
+          right: -20px;
+          transition: 0.5s;
+        }
+
+        .button:hover {
+          padding-right: 30px;
+          opacity: 1;
+          right: 0;
+        }
+
+
+        </style>
+        <script type="text/javascript">
+        function add1(){
+            window.open("C:\\Users\\nihar\\Desktop\\Web Develeopment\\Ayurvedic-Products-master\\billing.html")
+        }
+        function add2(){
+            window.open("C:\\Users\\nihar\\Desktop\\Web Develeopment\\Ayurvedic-Products-master\\billing1.html")
+        }
+
+        </script>
+    </head>
+        <body>
+          <nav class="navbar navbar-expand-lg navbar-light">
+
+            <a class="navbar-brand" href="">AYURVEDIC</a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+             </button>
+
+             <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+
+               <ul class="navbar-nav ml-auto">
+
+                 <li class="nav-item">
+                   <a href="ayuproducts.html" class="nav-link">Home</a>
+                 </li>
+
+                 <li class="nav-item">
+                   <a href="add.html" class="nav-link">Cart</a>
+                 </li>
+
+                 <li class="nav-item">
+                   <a href="#footer" class="nav-link">Contact</a>
+                 </li>
+
+               </ul>
+
+             </div>
+          </nav>
+      <center>    <h2><em>Add to Cart</em></h2></center>
+
+          <Center>
+
+            <form name="IC" method="POST" id="style">
+              <p>
+                  <center>    <h2><em>Neem Products</em></h2></center><br />
+                <input type = "radio"  name ="ice"
+                        checked = "checked"><img src="images/neem1.jpg" width="100px" height="100px"/>
+
+                <input type = "radio"  name ="ice"
+                      ><img src="images/neem5.png" width="100px" height="100px"/>
+
+                <input type = "radio"  name = "ice"
+                       > <img src="images/neem2.jpg" width="100px" height="100px"/><br/><br />
+                       <input type="submit" value="Proceed to Payment" onclick="add1()" class="button" /><br/>
+                       <br/><br/>
+                      
+                         <center>    <h2><em>Aloevera Products</em></h2></center><br />
+                       <input type = "radio"  name ="ice"
+                       checked = "checked"><img src="images/alosoap.jpg" width="100px" height="100px"/>
+
+               <input type = "radio"  name ="ice"
+                     ><img src="images/alofacewash.png" width="100px" height="100px"/>
+
+               <input type = "radio"  name = "ice"
+                      > <img src="images/alohandwash.png" width="100px" height="100px"/><br/><br />
+                      <input type="submit" value="Proceed to Payment" onclick="add2()" class="button">
+
+                  </p>
+                    </Center>
+  <footer id="footer" style="margin-top:199px;">
+    <a href="https://www.linkedin.com/in/niharika-dinesh-81013318b/"><i class="foo fa fa-linkedin" aria-hidden="true"></i></a>
+  <a href="https://www.facebook.com"><i class="foo fa fa-facebook-official" aria-hidden="true"></i></a>
+  <a href="https://www.instagram.com"><i class="foo fa fa-instagram" aria-hidden="true"></i></a>
+  <a href="mailto:niharikadinesh1@gmail.com"><i class="foo fa fa-envelope" aria-hidden="true"></i></a>
+  </footer>
+</body>
+
+
+</html>

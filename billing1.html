@@ -1,0 +1,114 @@
+<html>
+    <title>Bill</title>
+    <link rel="stylesheet" type="text/css"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <script src="https://kit.fontawesome.com/d7d7ee6600.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+
+
+
+
+
+   <script type="text/javascript">
+    function bill(){
+{
+num1 =document.getElementById("num1").value}
+num1=parseInt(num1);
+
+var sum=num1*40;
+if(sum){
+    alert("Total is "+sum+".Thankyou for Shopping with us.");
+}
+else{
+    alert("Enter your details");
+}
+
+
+}
+function bye(){
+        alert("ThankYou for Shopping with us!")
+    }
+</script>
+
+
+
+
+</head>
+
+<body onunload="bye();">
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <a class="navbar-brand" href="">AYURVEDIC</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo2" aria-controls="navbarTogglerDemo2" aria-expanded="false" aria-label="Toggle navigation">
+     <span class="navbar-toggler-icon"></span>
+     </button>
+
+     <div class="collapse navbar-collapse" id="navbarTogglerDemo2">
+
+       <ul class="navbar-nav ml-auto">
+
+         <li class="nav-item">
+           <a href="ayuproducts.html" class="nav-link">Home</a>
+         </li>
+
+         <li class="nav-item">
+           <a href="add.html" class="nav-link">Cart</a>
+         </li>
+
+         <li class="nav-item">
+           <a href="#footer" class="nav-link">Contact</a>
+         </li>
+
+       </ul>
+
+     </div>
+  </nav>
+
+
+<form name="IC" method = "post">
+<div class="row">
+<div class="col-12 col-sm-12 col-lg-6"><i class="fas fa-user"></i>
+  <input type="text" class="form-control" name="text" placeholder="First Name" required="required">
+</div>
+<div class="col-12 col-sm-12 col-lg-6"><i class="fas fa-signature"></i>
+  <input type="text" class="form-control" name="lastName" placeholder="Last name">
+</div>
+<div class="form-group col-12 col-sm-12 col-lg-6">
+<i class="fas fa-envelope"></i>
+  <input type="email" class="form-control" id="exampleFormControlInput1" name="email" placeholder="name@example.com">
+</div>
+<div class="col-12 col-sm-12 col-lg-6">
+<i class="fas fa-phone-alt"></i>  <input type="text" class="form-control" name="pno" placeholder="Phone No." required="required">
+</div>
+<div class="form-group col-12 col-sm-12 col-lg-6">
+<i class="fas fa-inbox"></i>
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="message" placeholder="Address to be delivered"></textarea>
+</div>
+<div class="form-group col-12 col-sm-12 col-lg-6"><i class="fa fa-balance-scale" aria-hidden="true"></i>
+<input type="text" class="form-control" id="num1" placeholder="Enter Quantity" >
+</div>
+<div class="form-group col-12 col-sm-12 col-lg-4">
+</div>
+<div class="form-group col-12 col-sm-12 col-lg-4">
+    <input class="form-control" type = "button"  value = "Submit" onclick="bill()" style="background:green;color:white" />
+</div>
+<div class="form-group col-12 col-sm-12 col-lg-4">
+</div>
+</div>
+</form>
+
+<footer id="footer" style="margin-top:199px;">
+  <a href="https://www.linkedin.com/in/niharika-dinesh-81013318b/"><i class="foo fa fa-linkedin" aria-hidden="true"></i></a>
+<a href="https://www.facebook.com"><i class="foo fa fa-facebook-official" aria-hidden="true"></i></a>
+<a href="https://www.instagram.com"><i class="foo fa fa-instagram" aria-hidden="true"></i></a>
+<a href="mailto:niharikadinesh1@gmail.com"><i class="foo fa fa-envelope" aria-hidden="true"></i></a>
+</footer>
+
+     </body>
+</html>
